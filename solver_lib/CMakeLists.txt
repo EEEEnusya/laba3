@@ -1,0 +1,6 @@
+cmake_minimum_required( VERSION 3.4)
+project( solver)
+set(CMAKE_CXX_STANDART 11)
+set(CMAKE_CXX_STANDART_REQUIRED ON)
+add_library(${PROJECT_NAME}  STATIC ${CMAKE_CURRENT_SOURCE_DIR}/solver.cpp)
+target_include_directories(solver  PUBLIC  ${CMAKE_CURRENT_SOURCE_DIR})
